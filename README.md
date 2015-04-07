@@ -7,6 +7,4 @@ The engine uses encapsulation to be flexible and portable if anyone felt the nee
 It has a lot of tweakable parameters to control how the buildings look. Heres's a video of it in action: ![Procedural City In Action!](https://www.youtube.com/watch?v=j8ZXXmKmkRU)
 
 
-Video of an older version showcasing the tweakable buildings:  
-
-![Procedural City In Action, But With A Lower Framerate](https://www.youtube.com/watch?v=qNNOEIxcsRo)
+Video of an older version showcasing the tweakable buildings: ![Procedural City In Action, But With A Lower Framerate!](https://www.youtube.com/watch?v=qNNOEIxcsRo)
