@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38D713FD-99FF-4BB3-A02D-464F50483A24}</ProjectGuid>
+    <RootNamespace>ProceduralCityVS2010</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;DxErr.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;DxErr.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="D3DApp\Input\Input.cpp" />
+    <ClCompile Include="D3DApp\Main\D3DApp.cpp" />
+    <ClCompile Include="D3DApp\Utility\Camera\Camera.cpp" />
+    <ClCompile Include="D3DApp\Utility\GfxStats\GfxStats.cpp" />
+    <ClCompile Include="D3DApp\Utility\Graphics\Graphics.cpp" />
+    <ClCompile Include="D3DApp\Utility\TexturePile\TexturePile.cpp" />
+    <ClCompile Include="D3DApp\Utility\Vertex\Vertex.cpp" />
+    <ClCompile Include="D3DApp\Utility\VindexPile\VindexPile.cpp" />
+    <ClCompile Include="D3DApp\Utility\Window\Window.cpp" />
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="ProceduralCityApp\Building\BuildingManager.cpp" />
+    <ClCompile Include="ProceduralCityApp\Car\Car.cpp" />
+    <ClCompile Include="ProceduralCityApp\Car\CarManager.cpp" />
+    <ClCompile Include="ProceduralCityApp\City\City.cpp" />
+    <ClCompile Include="ProceduralCityApp\Plot\PlotManager.cpp" />
+    <ClCompile Include="ProceduralCityApp\ProceduralCityApp.cpp" />
+    <ClCompile Include="ProceduralCityApp\Road\RoadManager.cpp" />
+    <ClCompile Include="TestApp\TestApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D3DApp\Input\Input.h" />
+    <ClInclude Include="D3DApp\Main\D3DApp.h" />
+    <ClInclude Include="D3DApp\Utility\Camera\Camera.h" />
+    <ClInclude Include="D3DApp\Utility\GfxStats\GfxStats.h" />
+    <ClInclude Include="D3DApp\Utility\Graphics\Graphics.h" />
+    <ClInclude Include="D3DApp\Utility\RectData\RectData.h" />
+    <ClInclude Include="D3DApp\Utility\TexturePile\TexturePile.h" />
+    <ClInclude Include="D3DApp\Utility\Vec\Vec.h" />
+    <ClInclude Include="D3DApp\Utility\Vertex\Vertex.h" />
+    <ClInclude Include="D3DApp\Utility\VindexPile\VindexPile.h" />
+    <ClInclude Include="D3DApp\Utility\Window\Window.h" />
+    <ClInclude Include="ProceduralCityApp\Building\BuildingManager.h" />
+    <ClInclude Include="ProceduralCityApp\Car\Car.h" />
+    <ClInclude Include="ProceduralCityApp\Car\CarManager.h" />
+    <ClInclude Include="ProceduralCityApp\City\City.h" />
+    <ClInclude Include="ProceduralCityApp\Plot\PlotManager.h" />
+    <ClInclude Include="ProceduralCityApp\ProceduralCityApp.h" />
+    <ClInclude Include="ProceduralCityApp\Road\RoadManager.h" />
+    <ClInclude Include="TestApp\TestApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

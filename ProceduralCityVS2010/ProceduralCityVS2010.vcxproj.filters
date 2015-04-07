@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="D3DApp">
+      <UniqueIdentifier>{e230745a-9665-45f1-9222-b01386a20638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Input">
+      <UniqueIdentifier>{733101a3-b7bf-4c46-b795-3ec8f6fb5fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Main">
+      <UniqueIdentifier>{65d2f74f-7a04-4a11-9468-ecae52a446a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility">
+      <UniqueIdentifier>{92be5a90-2cae-49af-a447-a493639126c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\Graphics">
+      <UniqueIdentifier>{90455bd4-0ff8-4e2a-bb60-f57423a4d723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\RectData">
+      <UniqueIdentifier>{0cdaca96-ead2-480d-b648-d143e3a79ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\TexturePile">
+      <UniqueIdentifier>{6def08cc-1729-4d93-acce-ba7da020dac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\VindexPile">
+      <UniqueIdentifier>{05a29129-61ad-4280-a6a4-4757262de548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\Vec">
+      <UniqueIdentifier>{9ae1dcae-fdb9-47e0-abc6-360b0f399513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\Vertex">
+      <UniqueIdentifier>{d464eff8-de22-4390-a40c-35d20d88145d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{fa6078b5-2139-4f34-9911-1157a3a3b7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestApp">
+      <UniqueIdentifier>{a132d4e2-41a7-4ba9-a4e0-18f08ea63bce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProceduralCityApp">
+      <UniqueIdentifier>{37aee113-1826-46ed-8968-3e972d37a86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\Camera">
+      <UniqueIdentifier>{3dadfc82-9bf7-4095-bc5a-273baf7daef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\GfxStats">
+      <UniqueIdentifier>{878ac2d3-5f21-498b-a3fd-68a3d0ff83bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProceduralCityApp\Road">
+      <UniqueIdentifier>{8775842a-02eb-4c53-b21a-5425b010176e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProceduralCityApp\Building">
+      <UniqueIdentifier>{72bad9a9-7cda-46c2-8ae3-9620d279a7cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProceduralCityApp\Car">
+      <UniqueIdentifier>{d7f2d415-d8bc-4cf9-a402-f424435cd934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProceduralCityApp\Plot">
+      <UniqueIdentifier>{faf33bbc-09a9-4cb1-b17b-719ef5998589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProceduralCityApp\City">
+      <UniqueIdentifier>{73ae1a53-a389-47a9-b500-801bfe77eb29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DApp\Utility\Window">
+      <UniqueIdentifier>{0d4b4687-0452-46ec-8af6-05b3bed11a56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestApp\TestApp.cpp">
+      <Filter>TestApp</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="D3DApp\Utility\TexturePile\TexturePile.cpp">
+      <Filter>D3DApp\Utility\TexturePile</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Utility\VindexPile\VindexPile.cpp">
+      <Filter>D3DApp\Utility\VindexPile</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Utility\Vertex\Vertex.cpp">
+      <Filter>D3DApp\Utility\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Utility\Window\Window.cpp">
+      <Filter>D3DApp\Utility\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Utility\Graphics\Graphics.cpp">
+      <Filter>D3DApp\Utility\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Main\D3DApp.cpp">
+      <Filter>D3DApp\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Input\Input.cpp">
+      <Filter>D3DApp\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCityApp\ProceduralCityApp.cpp">
+      <Filter>ProceduralCityApp</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Utility\GfxStats\GfxStats.cpp">
+      <Filter>D3DApp\Utility\GfxStats</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DApp\Utility\Camera\Camera.cpp">
+      <Filter>D3DApp\Utility\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCityApp\Plot\PlotManager.cpp">
+      <Filter>ProceduralCityApp\Plot</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCityApp\Road\RoadManager.cpp">
+      <Filter>ProceduralCityApp\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCityApp\Building\BuildingManager.cpp">
+      <Filter>ProceduralCityApp\Building</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCityApp\Car\CarManager.cpp">
+      <Filter>ProceduralCityApp\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCityApp\City\City.cpp">
+      <Filter>ProceduralCityApp\City</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCityApp\Car\Car.cpp">
+      <Filter>ProceduralCityApp\Car</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestApp\TestApp.h">
+      <Filter>TestApp</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\RectData\RectData.h">
+      <Filter>D3DApp\Utility\RectData</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\TexturePile\TexturePile.h">
+      <Filter>D3DApp\Utility\TexturePile</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\VindexPile\VindexPile.h">
+      <Filter>D3DApp\Utility\VindexPile</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\Vec\Vec.h">
+      <Filter>D3DApp\Utility\Vec</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\Vertex\Vertex.h">
+      <Filter>D3DApp\Utility\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\Window\Window.h">
+      <Filter>D3DApp\Utility\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\Graphics\Graphics.h">
+      <Filter>D3DApp\Utility\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Main\D3DApp.h">
+      <Filter>D3DApp\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Input\Input.h">
+      <Filter>D3DApp\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCityApp\ProceduralCityApp.h">
+      <Filter>ProceduralCityApp</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\GfxStats\GfxStats.h">
+      <Filter>D3DApp\Utility\GfxStats</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DApp\Utility\Camera\Camera.h">
+      <Filter>D3DApp\Utility\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCityApp\Plot\PlotManager.h">
+      <Filter>ProceduralCityApp\Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCityApp\Road\RoadManager.h">
+      <Filter>ProceduralCityApp\Road</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCityApp\Building\BuildingManager.h">
+      <Filter>ProceduralCityApp\Building</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCityApp\Car\CarManager.h">
+      <Filter>ProceduralCityApp\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCityApp\City\City.h">
+      <Filter>ProceduralCityApp\City</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCityApp\Car\Car.h">
+      <Filter>ProceduralCityApp\Car</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader.fx">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>
