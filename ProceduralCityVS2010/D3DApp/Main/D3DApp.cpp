@@ -8,6 +8,7 @@ D3DApp::D3DApp(HINSTANCE hInstance, std::string winCaption, int screenX, int scr
 {
 	//mWindow.setInstance(hInstance);
 	//mInput.setInstance(mWindow.getInstance());
+	bShouldEnd = false;
 	mWindow.init(hInstance, winCaption, screenX, screenY); //!! TODO Remove public mhMainWnd, reference as variables in .init funcs
 	mGraphics.init(mWindow.getHandle(), screenX, screenY);
 	mInput.init(mWindow.getHandle(), hInstance);
@@ -27,7 +28,7 @@ int D3DApp::run()
 	float secsPerCnt = 1.0f / (float)cntsPerSec;
 	__int64 prevTimeStamp = 0;
 	QueryPerformanceCounter((LARGE_INTEGER*)&prevTimeStamp);
-	while (msg.message != WM_QUIT)
+	while (msg.message != WM_QUIT && !bShouldEnd)
 	{
 		if (!mWindow.handleMessages(msg))
 		{
@@ -78,4 +79,9 @@ Window D3DApp::getWnd()
 void D3DApp::enableFullScreen(bool enable)
 {
 	mGraphics.enableFullScreen(enable);
+}
+
+void D3DApp::exit()
+{
+	bShouldEnd = true;
 }

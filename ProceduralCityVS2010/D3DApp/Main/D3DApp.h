@@ -32,6 +32,7 @@ public:
 	virtual void draw() {}
 	virtual void init() {}
 
+	void		exit();
 	void		initMainWindow();
 	int			run();
 
@@ -44,6 +45,7 @@ protected:
 	Graphics	mGraphics;
 	Input		mInput;
 
+	bool		bShouldEnd;
 	
 };
 

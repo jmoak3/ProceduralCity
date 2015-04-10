@@ -98,11 +98,13 @@ LRESULT Window::msgProc(UINT msg, WPARAM wParam, LPARAM lParam)
 		return 0;
 	case WM_DESTROY:   
 		PostQuitMessage(0);
+		gd3dApp->exit();
 		return 0;
 
 	case WM_KEYDOWN:
 		if (wParam == VK_ESCAPE)
 		{
+			PostQuitMessage(0);
 			DestroyWindow(mhMainWnd);
 		}
 		return 0;
