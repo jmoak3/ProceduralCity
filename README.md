@@ -11,4 +11,4 @@ It also has "Cars" that drive around. Heres's a video of the city + cars in acti
 
 
 Video of an older version showcasing the tweakable buildings: 
-[![Procedural City In Action With Lower Framerate! ](http://img.youtube.com/vi/j8ZXXmKmkRU/0.jpg)](http://www.youtube.com/watch?v=qNNOEIxcsRo)
+[![Procedural City In Action With Lower Framerate! ](http://img.youtube.com/vi/qNNOEIxcsRo/0.jpg)](http://www.youtube.com/watch?v=qNNOEIxcsRo)
